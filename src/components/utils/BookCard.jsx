@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const BookCard = ({ imageUrl, description, title,id}) => {
   const truncatedDescription =
     description.length > 100
-      ? `${description.substring(0, 100)}...`
+      ? `${description.substring(0, 60)}...`
       : description;
   return (
     <div className="card" style={{ width: "10rem", height: "18rem",margin:"10px", }}>
